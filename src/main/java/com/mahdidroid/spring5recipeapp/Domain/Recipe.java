@@ -24,7 +24,7 @@ public class Recipe {
 
     @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
-    @Enumerated
+    @Enumerated(value = EnumType.STRING )
     private Difficulty difficulty;
 
 
