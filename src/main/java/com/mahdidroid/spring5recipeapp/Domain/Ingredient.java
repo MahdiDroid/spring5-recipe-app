@@ -1,15 +1,13 @@
 package com.mahdidroid.spring5recipeapp.Domain;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
+import java.math.BigDecimal;
+
+
 
 @Entity
-import java.math.BigDecimal;
-
 public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +15,7 @@ public class Ingredient {
     private String description;
     private BigDecimal amount;
 
-
+    @ManyToOne
     private Recipe recipe;
 
     public Long getId() {
