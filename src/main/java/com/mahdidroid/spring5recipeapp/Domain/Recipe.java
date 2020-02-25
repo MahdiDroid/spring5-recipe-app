@@ -23,8 +23,9 @@ public class Recipe {
     private Set<Ingredient> ingredients;
 
     @OneToOne(cascade = CascadeType.ALL)
-
     private Notes notes;
+
+
 
 
     public Long getId() {
