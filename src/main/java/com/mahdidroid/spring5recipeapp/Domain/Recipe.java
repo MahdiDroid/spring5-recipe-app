@@ -15,6 +15,7 @@ public class Recipe {
     private String url;
     private String direction;
     private String description;
+    @Lob
     private Byte[] image;
 
     @OneToOne(cascade = CascadeType.ALL)
