@@ -26,6 +26,8 @@ public class Recipe {
     private Notes notes;
     @Enumerated(value = EnumType.STRING )
     private Difficulty difficulty;
+    @ManyToMany
+    private Set<Category> categories;
 
 
 
@@ -124,5 +126,13 @@ public class Recipe {
 
     public void setIngredients(Set<Ingredient> ingredients) {
         this.ingredients = ingredients;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Set<Category> categories) {
+        this.categories = categories;
     }
 }
