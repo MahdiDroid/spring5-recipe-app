@@ -1,6 +1,6 @@
 package com.mahdidroid.spring5recipeapp.Domain;
 
-public enum difficulty {
+public enum Difficulty {
 
     EASY,
     MODERATE,
